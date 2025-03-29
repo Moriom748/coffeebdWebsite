@@ -1,0 +1,1920 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+::selection{
+    background-color: #C2A080;
+    color: #42200B;
+    }
+    
+body {
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: 'Roboto Slab', serif;
+  
+  }
+.menu {
+    background-color: #F7F6F1;
+     padding: 2% 0;
+}
+.menu .pic-area {
+    height: 100vh;
+    padding-top: 35vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, rgba(128, 128, 128, 0.9), rgba(128, 128, 128, 0.3)), url("assets/banner-1.png") center top no-repeat;
+    background-size: cover;
+}
+.menu .pic-area h1,
+.menu .pic-area h2,
+.menu .pic-area h3 {
+    font-weight: 400;
+}
+.menu .pic-area h1 {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;
+    font-size: 48px;
+}
+.menu .pic-area h2 {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;
+    font-size: 36px;
+}
+.menu .pic-area h3 {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;
+    font-size: 24px;
+}
+.menu .pic-area .pic-area-text {
+    padding: 1rem;
+    background: rgba(71, 71, 71, 0.2);
+}
+ .menu{
+    
+ }
+@media (min-width:991px) {
+    .menu .flex {
+        background-color: #fff;
+        margin: 1rem auto;
+        padding: 1.5rem;
+        max-width: 1170px;
+        display: grid;
+        grid-template-columns: 260px 260px 260px 260px;
+        /* grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 1.5rem;
+    }
+    .menu .flex .box h2 {
+        font-size: 1.4rem;
+       
+    }
+    .menu .flex .box h3 {
+        font-size: 1rem;
+    }
+    .side__col{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        }
+        .side__col2{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        }
+        
+      
+}
+ 
+@media (max-width:991px) {
+    .menu .flex {
+        background-color: #fff;
+        margin: 1rem auto;
+        padding: 1.5rem;
+        max-width: 1170px;
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        /* grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
+        /* grid-column-gap: 1.5rem;
+        grid-row-gap: 1.5rem; */
+    }
+    .menu .flex .box h2 {
+        font-size: 1rem;
+        
+    }
+    .menu .flex .box h3 {
+        font-size: 0.9rem;
+    }
+    .side__col ,.side__col2{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        }
+        .sidebar label{
+            width: 28%;
+        }
+     
+}
+@media (max-width:400px) {
+    .menu .flex {
+        background-color: #fff;
+        margin: 1rem auto;
+        padding: 1.5rem;
+        max-width: 1170px;
+        display: grid;
+        grid-template-columns: 100%;
+        /* grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 1.5rem;
+    }
+  
+}
+
+.menu .flex .box {
+    position: relative;
+    text-align: center;
+     margin: 5px !important;
+}
+.menu .flex .box h2 {
+     
+    color: #C2A080;
+    margin: 5% auto;
+}
+ 
+.menu .flex .box .box__btns {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.menu .flex .box .box__btn {
+    cursor: pointer;
+    
+    text-decoration: none;
+    outline: none;
+    padding: 0.5rem;
+    margin: 0 3rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background: #b66f2d;
+    border: 1px solid #151515;
+    color: #151515;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.menu .flex .box .box__btn:hover {
+    background: #db8637;
+}
+.menu .flex .box .img-container {
+    position: relative;
+    border-bottom: 5px solid #b66f2d;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.menu .flex .box .img-container img {
+    width: 100%;
+    height: 200px;
+}
+.menu .flex .box .img-container::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #707070;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.menu .flex .box .img-container:hover::after {
+    top: 0;
+    opacity: 0.5;
+}
+.menu .flex .box .img-container:hover .box__btn {
+    opacity: 1;
+}
+.home {
+ }
+.home .pic-area {
+    height: 100vh;
+    padding-top: 35vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, rgba(128, 128, 128, 0.9), rgba(128, 128, 128, 0.3)), url("../img/home-bg.jpg") center top no-repeat;
+    background-size: cover;
+    /*  */
+}
+.home .pic-area h1,
+.home .pic-area h2,
+.home .pic-area h3 {
+    font-weight: 800;
+}
+.home .pic-area h1 {
+    font-size: 48px;
+}
+.home .pic-area h2 {
+    font-size: 36px;
+}
+.home .pic-area h3 {
+    font-size: 24px;
+}
+.home .pic-area .pic-area-text {
+    padding: 1rem;
+    background: rgba(71, 71, 71, 0.2);
+}
+.home .pic-area .btn-order {
+    cursor: pointer;
+     
+    text-decoration: none;
+    outline: none;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background: #b66f2d;
+    border: 1px solid #151515;
+    transition: all 0.5s ease-in-out;
+}
+.home .pic-area .btn-order:hover {
+    background: #db8637;
+}
+.home .main-area h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px;
+}
+.home .main-area p {
+    font-size: 1.5rem;
+    align-items: center;
+    text-align: center;
+    margin: 10px 20%;
+}
+.home .main-area .section-area .section-A {
+    padding: 3rem 0;
+    color: white;
+    background: #db8637;
+}
+.home .main-area .section-area .section-B {
+    padding: 3rem 0;
+    color: white;
+    background: #b66f2d;
+}
+.home .main-area .section-area .section-C {
+    padding: 3rem 0;
+    color: white;
+    background: #707070;
+}
+.home .main-area .section-area .box-img img {
+    padding: 0 10%;
+    width: 100%;
+    height: auto;
+}
+.home .main-area .section-area .box-text {
+    position: absolute;
+    margin: 20% 10% 0 10%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.home footer {
+    background-color: #707070;
+}
+.services {
+     
+}
+.services .pic-area {
+    height: 100vh;
+    padding-top: 35vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, rgba(128, 128, 128, 0.9), rgba(128, 128, 128, 0.3)), url("../img/services-bg.jpg") center top no-repeat;
+    background-size: cover;
+    
+}
+.services .pic-area h1,
+.services .pic-area h2,
+.services .pic-area h3 {
+    font-weight: 800;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;
+}
+.services .pic-area h1 {
+    font-size: 48px;
+}
+.services .pic-area h2 {
+    font-size: 36px;
+}
+.services .pic-area h3 {
+    font-size: 24px;
+}
+.services .pic-area .pic-area-text {
+    padding: 1rem;
+    background: rgba(71, 71, 71, 0.2);
+}
+.services .main-area h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px;
+}
+.services .main-area p {
+    font-size: 1.5rem;
+    align-items: center;
+    text-align: center;
+    margin: 10px 20%;
+}
+.services .main-area .section-area .section-A {
+    padding: 3rem 0;
+    color: white;
+    background: #db8637;
+}
+.services .main-area .section-area .section-B {
+    padding: 3rem 0;
+    color: white;
+    background: #b66f2d;
+}
+.services .main-area .section-area .section-C {
+    padding: 3rem 0;
+    color: white;
+    background: #707070;
+}
+.services .main-area .section-area .box-img img {
+    padding: 0 10%;
+    width: 100%;
+    height: auto;
+}
+.services .main-area .section-area .box-text {
+    position: absolute;
+    margin: 10% 10% 0 10%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.services footer {
+    background-color: #707070;
+}
+.contact {
+   
+}
+.contact .pic-area {
+    height: 100vh;
+    padding-top: 35vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, rgba(128, 128, 128, 0.9), rgba(128, 128, 128, 0.3)), url("../img/contact-bg.jpg") center top no-repeat;
+    background-size: cover;
+    
+    transition: all 0.5s ease-in-out;
+}
+.contact .pic-area h1,
+.contact .pic-area h2,
+.contact .pic-area h3 {
+    font-weight: 800;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;
+}
+.contact .pic-area h1 {
+    font-size: 48px;
+}
+.contact .pic-area h2 {
+    font-size: 36px;
+}
+.contact .pic-area h3 {
+    font-size: 24px;
+}
+.contact .pic-area .pic-area-text {
+    padding: 1rem;
+    background: rgba(71, 71, 71, 0.2);
+}
+.contact .pic-area .sections {
+    
+    display: grid;
+    padding: 2rem 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    font-size: 1.5rem;
+}
+.contact .pic-area .sections-section {
+    background-color: rgba(182, 111, 45, 0.75);
+    padding: 1rem;
+    margin: 1rem;
+}
+.contact .pic-area .icons {
+    font-size: 2.5rem;
+}
+.contact .pic-area .icons a {
+    color: #151515;
+    outline: none;
+    text-decoration: none;
+    margin: 0.5rem;
+    transition: all 0.5s ease-in-out;
+}
+.contact .pic-area .icons a:hover {
+    color: #b66f2d;
+}
+.contact .pic-area .copyright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+     
+    color: white;
+}
+.sign-in {
+     
+}
+.sign-in .pic-area {
+    height: 100vh;
+    padding-top: 35vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, rgba(128, 128, 128, 0.9), rgba(128, 128, 128, 0.3)), url("../img/sign-in-bg.jpg") center top no-repeat;
+    background-size: cover;
+    
+    transition: all 0.5s ease-in-out;
+}
+.sign-in .pic-area h1,
+.sign-in .pic-area h2,
+.sign-in .pic-area h3,
+.sign-in .pic-area label {
+    font-weight: 800;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;
+}
+.sign-in .pic-area label {
+    font-size: 2.5rem;
+}
+.sign-in .pic-area h1 {
+    font-size: 48px;
+}
+.sign-in .pic-area h2 {
+    font-size: 36px;
+}
+.sign-in .pic-area h3 {
+    font-size: 24px;
+}
+.sign-in .pic-area .pic-area-text {
+    padding: 1rem;
+    background: rgba(71, 71, 71, 0.2);
+}
+.sign-in .pic-area input {
+     
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #151515;
+    color: #b66f2d;
+    outline: none;
+    border: 1px solid #b66f2d;
+}
+.sign-in .pic-area #username-display {
+    font-size: 2rem;
+    margin: 1rem;
+    font-weight: 800;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;
+}
+.sign-in .pic-area .btn-order {
+    cursor: pointer;
+     
+    text-decoration: none;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background: #b66f2d;
+    border: 1px solid #151515;
+    transition: all 0.5s ease-in-out;
+}
+.sign-in .pic-area .btn-order:hover {
+    background: #db8637;
+}
+.sign-in .pic-area .icons {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+.sign-in .pic-area .icons a {
+    color: #151515;
+    outline: none;
+    text-decoration: none;
+    margin: 0.5rem;
+    transition: all 0.5s ease-in-out;
+}
+.sign-in .pic-area .icons a:hover {
+    color: #b66f2d;
+}
+.sign-in .pic-area .copyright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+     
+    color: white;
+}
+.sign-up {
+     
+}
+.sign-up .pic-area {
+    height: 100vh;
+    padding-top: 25vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, rgba(128, 128, 128, 0.9), rgba(128, 128, 128, 0.3)), url("../img/sign-up-bg.jpg") center top no-repeat;
+    background-size: cover;
+    
+    transition: all 0.5s ease-in-out;
+}
+.sign-up .pic-area h1,
+.sign-up .pic-area h2,
+.sign-up .pic-area h3,
+.sign-up .pic-area label {
+    font-weight: 800;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;
+}
+.sign-up .pic-area label {
+    font-size: 2rem;
+}
+.sign-up .pic-area #login-box {
+    margin: 0 20%;
+}
+.sign-up .pic-area h1 {
+    font-size: 48px;
+}
+.sign-up .pic-area h2 {
+    font-size: 36px;
+}
+.sign-up .pic-area h3 {
+    font-size: 24px;
+}
+.sign-up .pic-area .pic-area-text {
+    padding: 1rem;
+    background: rgba(71, 71, 71, 0.2);
+}
+.sign-up .pic-area input {
+     
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0.5rem;
+    background-color: #151515;
+    color: #b66f2d;
+    outline: none;
+    border: 1px solid #b66f2d;
+}
+.sign-up .pic-area #username-display {
+    font-size: 2rem;
+    margin: 1rem;
+    font-weight: 800;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;
+}
+.sign-up .pic-area .btn-order {
+    cursor: pointer;
+     
+    text-decoration: none;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background: #b66f2d;
+    border: 1px solid #151515;
+    transition: all 0.5s ease-in-out;
+}
+.sign-up .pic-area .btn-order:hover {
+    background: #db8637;
+}
+.sign-up .pic-area .icons {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+.sign-up .pic-area .icons a {
+    color: #151515;
+    outline: none;
+    text-decoration: none;
+    margin: 0.5rem;
+    transition: all 0.5s ease-in-out;
+}
+.sign-up .pic-area .icons a:hover {
+    color: #b66f2d;
+}
+.sign-up .pic-area .copyright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+     
+    color: white;
+}
+@media screen and (min-width: 768px) {
+    .no-scroll {
+        overflow: auto;
+    }
+    .menu-btn {
+        visibility: hidden;
+    }
+    .second-.nmc {
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        padding: 1rem;
+        background: #151515;
+        transition: all 0.5s ease-in-out;
+    }
+    .nav {
+        visibility: visible;
+    }
+    .nav .menu-nav {
+        display: block;
+        transform: translateY(0);
+        height: 100%;
+        text-align: right;
+    }
+    .nav .menu-nav__item {
+        display: inline;
+    }
+    .nav .menu-nav__link {
+        font-size: 1.5rem;
+    }
+    .nav .logo {
+        
+        float: left;
+        font-size: 1.5rem;
+        color: #e0e0e0;
+    }
+    .nav .sign-in,
+    .nav .sign-up {
+        font-size: 1rem;
+    }
+    .nav .sign-in {
+        margin-right: 0rem;
+    }
+    .nav .sign-in.active,
+    .nav .sign-up.active {
+        color: #b66f2d;
+    }
+    .nav #slash {
+        color: white;
+        font-size: 1rem;
+        margin: 0 0.5rem;
+    }
+    .nav ul li {
+        display: inline;
+         
+    }
+    .nav a {
+        outline: none;
+        color: white;
+        font-size: 1.5rem;
+        margin-right: 2rem;
+        text-decoration: none;
+        transition: all 0.5s ease-in-out;
+    }
+    .nav a:hover {
+        color: #b66f2d;
+    }
+    .cart,
+    .one__view,
+    .two__view,
+    .three__view,
+    .four__view,
+    .five__view,
+    .six__view,
+    .seven__view,
+    .eight__view,
+    .nine__view,
+    .ten__view,
+    .eleven__view,
+    .twelve__view {
+        width: 30vw;
+        min-width: 450px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .no-scroll {
+        overflow: hidden;
+    }
+    .menu-btn {
+        text-align: left;
+        position: fixed;
+        z-index: 3;
+        right: 1rem;
+        top: 1rem;
+        height: 20px;
+        width: 28px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu-btn__burger {
+        position: absolute;
+        right: 0;
+        top: 0.5rem;
+        width: 28px;
+        height: 3px;
+        background: #e0e0e0;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu-btn__burger::before {
+        content: "";
+        position: absolute;
+        top: -8px;
+        width: 28px;
+        height: 3px;
+        background: #e0e0e0;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu-btn__burger::after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        width: 28px;
+        height: 3px;
+        background: #e0e0e0;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu-btn__burger.open {
+        transform: rotate(720deg);
+        background: transparent;
+    }
+    .menu-btn__burger.open::before {
+        transform: rotate(45deg) translate(5px, 8px);
+    }
+    .menu-btn__burger.open::after {
+        width: 28px;
+        transform: rotate(-45deg) translate(3px, -7px);
+    }
+    .nav {
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        opacity: 0.98;
+        visibility: hidden;
+    }
+    .nav br {
+        display: none;
+    }
+    .nav ul li {
+        display: inline;
+         
+    }
+    .nav a {
+        outline: none;
+        color: white;
+        font-size: 1.5rem;
+        text-decoration: none;
+        transition: all 0.5s ease-in-out;
+    }
+    .nav a:hover {
+        color: #b66f2d;
+    }
+    .nav.open {
+        visibility: visible;
+    }
+    .nav .menu-nav {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        background: #151515;
+        list-style-type: none;
+        padding-right: 1rem;
+        transform: translateY(-100%);
+        transition: all 0.5s ease-in-out;
+    }
+    .nav .menu-nav.open {
+        transform: translateY(0);
+    }
+    .nav .menu-nav__item {
+        transform: translateX(100vw);
+        transition: all 0.5s ease-in-out;
+    }
+    .nav .menu-nav__item.open {
+        transform: translateX(0);
+    }
+    .nav .menu-nav__item.active > a {
+        color: #b66f2d;
+    }
+    .nav .menu-nav__link {
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 0.5rem 0;
+        font-weight: 300;
+        transition: all 0.5s ease-in-out;
+    }
+    .nav .menu-nav__link:hover {
+        color: #b66f2d;
+    }
+    .nav .logo {
+        
+        font-size: 2rem;
+        color: #e0e0e0;
+        text-transform: none;
+    }
+    .nav .sign-in {
+        margin-right: 0rem;
+    }
+    .nav .sign-in.active,
+    .nav .sign-up.active {
+        color: #b66f2d;
+    }
+    .nav #slash {
+        color: white;
+        margin: 0 0.5rem;
+    }
+    .menu-nav__item:nth-child(1) {
+        transition-delay: 0.25s;
+    }
+    .menu-nav__item:nth-child(2) {
+        transition-delay: 0.35s;
+    }
+    .menu-nav__item:nth-child(3) {
+        transition-delay: 0.45s;
+    }
+    .menu-nav__item:nth-child(4) {
+        transition-delay: 0.55s;
+    }
+    .menu-nav__item:nth-child(5) {
+        transition-delay: 0.65s;
+    }
+    .menu-nav__item:nth-child(6) {
+        transition-delay: 0.75s;
+    }
+    .menu-nav__item:nth-child(7) {
+        transition-delay: 0.85s;
+    }
+    .menu-nav__item:nth-child(8) {
+        transition-delay: 0.95s;
+    }
+    .cart,
+    .one__view,
+    .two__view,
+    .three__view,
+    .four__view,
+    .five__view,
+    .six__view,
+    .seven__view,
+    .eight__view,
+    .nine__view,
+    .ten__view,
+    .eleven__view,
+    .twelve__view {
+        width: 100%;
+    }
+    .contact .pic-area {
+        padding-top: 20vh;
+    }
+    .contact .pic-area .sections {
+        grid-template-columns: 1fr;
+    }
+    .contact .pic-area .sections-section {
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+    .contact .pic-area .icons {
+        font-size: 1.5rem;
+        display: inline;
+        padding: 0;
+        margin: 0;
+    }
+    .contact .pic-area .icons a {
+        color: #151515;
+        outline: none;
+        text-decoration: none;
+        margin: 0.5rem;
+        transition: all 0.5s ease-in-out;
+    }
+    .contact .pic-area .icons a:hover {
+        color: #b66f2d;
+    }
+    .contact .pic-area .copyright {
+        font-size: 0.75rem;
+    }
+    .home .pic-area,
+    .menu .pic-area,
+    .services .pic-area {
+        padding-top: 20vh;
+    }
+    .contact .pic-area {
+        padding-top: 10vh;
+    }
+    .sign-up .pic-area label,
+    .sign-in .pic-area label {
+        font-size: 1.5rem;
+    }
+    .sign-up .pic-area .pic-area-text,
+    .sign-in .pic-area .pic-area-text {
+        padding: 0.25rem;
+        background: rgba(71, 71, 71, 0.2);
+    }
+    .sign-up .pic-area input,
+    .sign-in .pic-area input {
+        font-size: 1rem;
+        border: 1px solid #b66f2d;
+    }
+    .sign-up .pic-area #username-display,
+    .sign-in .pic-area #username-display {
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+    .sign-up .pic-area .btn-order,
+    .sign-in .pic-area .btn-order {
+        padding: 0.25rem 1rem;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+    }
+    .sign-up .pic-area .icons,
+    .sign-in .pic-area .icons {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .sign-up .pic-area .icons a,
+    .sign-in .pic-area .icons a {
+        margin: 0.25rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .home .main-area h1 {
+        font-size: 1rem;
+        margin: 20px;
+    }
+    .home .main-area p {
+        font-size: 0.7rem;
+        margin: 10px 20%;
+    }
+    .home .main-area .section-area .box-text {
+        position: static;
+        margin: 0;
+    }
+    .services .main-area h1 {
+        font-size: 1rem;
+        margin: 20px;
+    }
+    .services .main-area p {
+        font-size: 0.7rem;
+        margin: 10px 20%;
+    }
+    .services .main-area .section-area .box-text {
+        position: static;
+        margin: 0;
+    }
+}
+html {
+    transition: all 0.5s ease-in-out;
+}
+/* .nmc .nav img {
+    background: #e0e0e0;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    border: 3px solid #e0e0e0;
+} */
+.nmc .nav img {
+    background: #e0e0e0;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    border: 3px solid #e0e0e0;
+}
+.nmc .nav .menu-nav__item.active > a {
+    color: #b66f2d;
+}
+.nmc .cart__openBtn,
+.nmc .cart__closeBtn {
+    cursor: pointer;
+}
+.nmc .cart__closeBtn {
+    position: fixed;
+    font-size: 1.5rem;
+    transition: all 0.5s ease-in-out;
+}
+.nmc .cart__closeBtn:hover {
+    color: #b66f2d;
+}
+.nmc .cart-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    background: rgba(112, 112, 112, 0.5);
+    z-index: 4;
+    visibility: hidden;
+}
+.nmc .cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    overflow: auto;
+    z-index: 5;
+    background: #151515;
+    padding: 1.5rem;
+    transition: all 0.5s ease-in-out;
+    border: 2px groove #707070;
+    transform: translateX(100%);
+    text-align: center;
+     
+    color: #e0e0e0;
+}
+.nmc .span-primary {
+    color: #b66f2d;
+}
+.nmc .transparentBcg {
+    visibility: visible;
+}
+.nmc .showcart {
+    transform: translateX(0);
+}
+.nmc .item-display {
+    color: #151515;
+}
+.nmc .total {
+    font-size: 1.5rem;
+}
+.nmc .one1-cart-item,
+.nmc .two2-cart-item,
+.nmc .three3-cart-item,
+.nmc .four4-cart-item,
+.nmc .five5-cart-item,
+.nmc .six6-cart-item,
+.nmc .seven7-cart-item,
+.nmc .eight8-cart-item,
+.nmc .nine9-cart-item,
+.nmc .ten10-cart-item,
+.nmc .eleven11-cart-item,
+.nmc .twelve12-cart-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 1.5rem;
+    margin: 1.5rem 0;
+    text-align: left;
+    color: #e0e0e0;
+}
+.nmc .one1-cart-item img,
+.nmc .two2-cart-item img,
+.nmc .three3-cart-item img,
+.nmc .four4-cart-item img,
+.nmc .five5-cart-item img,
+.nmc .six6-cart-item img,
+.nmc .seven7-cart-item img,
+.nmc .eight8-cart-item img,
+.nmc .nine9-cart-item img,
+.nmc .ten10-cart-item img,
+.nmc .eleven11-cart-item img,
+.nmc .twelve12-cart-item img {
+    width: 125px;
+    height: 125px;
+    border-radius: 4rem;
+    padding: 0;
+    margin: 5%;
+    border: 5px solid #b66f2d;
+}
+.nmc .one1-cart-item h3,
+.nmc .two2-cart-item h3,
+.nmc .three3-cart-item h3,
+.nmc .four4-cart-item h3,
+.nmc .five5-cart-item h3,
+.nmc .six6-cart-item h3,
+.nmc .seven7-cart-item h3,
+.nmc .eight8-cart-item h3,
+.nmc .nine9-cart-item h3,
+.nmc .ten10-cart-item h3,
+.nmc .eleven11-cart-item h3,
+.nmc .twelve12-cart-item h3 {
+    font-size: 1.25rem;
+}
+.nmc .one1-cart-item h4,
+.nmc .two2-cart-item h4,
+.nmc .three3-cart-item h4,
+.nmc .four4-cart-item h4,
+.nmc .five5-cart-item h4,
+.nmc .six6-cart-item h4,
+.nmc .seven7-cart-item h4,
+.nmc .eight8-cart-item h4,
+.nmc .nine9-cart-item h4,
+.nmc .ten10-cart-item h4,
+.nmc .eleven11-cart-item h4,
+.nmc .twelve12-cart-item h4 {
+    font-size: 1.125rem;
+    margin: 0.25rem 0;
+}
+.nmc .one1-cart-item .item-amount1,
+.nmc .one1-cart-item .item-amount2,
+.nmc .one1-cart-item .item-amount3,
+.nmc .one1-cart-item .item-amount4,
+.nmc .one1-cart-item .item-amount5,
+.nmc .one1-cart-item .item-amount6,
+.nmc .one1-cart-item .item-amount7,
+.nmc .one1-cart-item .item-amount8,
+.nmc .one1-cart-item .item-amount9,
+.nmc .one1-cart-item .item-amount10,
+.nmc .one1-cart-item .item-amount11,
+.nmc .one1-cart-item .item-amount12,
+.nmc .two2-cart-item .item-amount1,
+.nmc .two2-cart-item .item-amount2,
+.nmc .two2-cart-item .item-amount3,
+.nmc .two2-cart-item .item-amount4,
+.nmc .two2-cart-item .item-amount5,
+.nmc .two2-cart-item .item-amount6,
+.nmc .two2-cart-item .item-amount7,
+.nmc .two2-cart-item .item-amount8,
+.nmc .two2-cart-item .item-amount9,
+.nmc .two2-cart-item .item-amount10,
+.nmc .two2-cart-item .item-amount11,
+.nmc .two2-cart-item .item-amount12,
+.nmc .three3-cart-item .item-amount1,
+.nmc .three3-cart-item .item-amount2,
+.nmc .three3-cart-item .item-amount3,
+.nmc .three3-cart-item .item-amount4,
+.nmc .three3-cart-item .item-amount5,
+.nmc .three3-cart-item .item-amount6,
+.nmc .three3-cart-item .item-amount7,
+.nmc .three3-cart-item .item-amount8,
+.nmc .three3-cart-item .item-amount9,
+.nmc .three3-cart-item .item-amount10,
+.nmc .three3-cart-item .item-amount11,
+.nmc .three3-cart-item .item-amount12,
+.nmc .four4-cart-item .item-amount1,
+.nmc .four4-cart-item .item-amount2,
+.nmc .four4-cart-item .item-amount3,
+.nmc .four4-cart-item .item-amount4,
+.nmc .four4-cart-item .item-amount5,
+.nmc .four4-cart-item .item-amount6,
+.nmc .four4-cart-item .item-amount7,
+.nmc .four4-cart-item .item-amount8,
+.nmc .four4-cart-item .item-amount9,
+.nmc .four4-cart-item .item-amount10,
+.nmc .four4-cart-item .item-amount11,
+.nmc .four4-cart-item .item-amount12,
+.nmc .five5-cart-item .item-amount1,
+.nmc .five5-cart-item .item-amount2,
+.nmc .five5-cart-item .item-amount3,
+.nmc .five5-cart-item .item-amount4,
+.nmc .five5-cart-item .item-amount5,
+.nmc .five5-cart-item .item-amount6,
+.nmc .five5-cart-item .item-amount7,
+.nmc .five5-cart-item .item-amount8,
+.nmc .five5-cart-item .item-amount9,
+.nmc .five5-cart-item .item-amount10,
+.nmc .five5-cart-item .item-amount11,
+.nmc .five5-cart-item .item-amount12,
+.nmc .six6-cart-item .item-amount1,
+.nmc .six6-cart-item .item-amount2,
+.nmc .six6-cart-item .item-amount3,
+.nmc .six6-cart-item .item-amount4,
+.nmc .six6-cart-item .item-amount5,
+.nmc .six6-cart-item .item-amount6,
+.nmc .six6-cart-item .item-amount7,
+.nmc .six6-cart-item .item-amount8,
+.nmc .six6-cart-item .item-amount9,
+.nmc .six6-cart-item .item-amount10,
+.nmc .six6-cart-item .item-amount11,
+.nmc .six6-cart-item .item-amount12,
+.nmc .seven7-cart-item .item-amount1,
+.nmc .seven7-cart-item .item-amount2,
+.nmc .seven7-cart-item .item-amount3,
+.nmc .seven7-cart-item .item-amount4,
+.nmc .seven7-cart-item .item-amount5,
+.nmc .seven7-cart-item .item-amount6,
+.nmc .seven7-cart-item .item-amount7,
+.nmc .seven7-cart-item .item-amount8,
+.nmc .seven7-cart-item .item-amount9,
+.nmc .seven7-cart-item .item-amount10,
+.nmc .seven7-cart-item .item-amount11,
+.nmc .seven7-cart-item .item-amount12,
+.nmc .eight8-cart-item .item-amount1,
+.nmc .eight8-cart-item .item-amount2,
+.nmc .eight8-cart-item .item-amount3,
+.nmc .eight8-cart-item .item-amount4,
+.nmc .eight8-cart-item .item-amount5,
+.nmc .eight8-cart-item .item-amount6,
+.nmc .eight8-cart-item .item-amount7,
+.nmc .eight8-cart-item .item-amount8,
+.nmc .eight8-cart-item .item-amount9,
+.nmc .eight8-cart-item .item-amount10,
+.nmc .eight8-cart-item .item-amount11,
+.nmc .eight8-cart-item .item-amount12,
+.nmc .nine9-cart-item .item-amount1,
+.nmc .nine9-cart-item .item-amount2,
+.nmc .nine9-cart-item .item-amount3,
+.nmc .nine9-cart-item .item-amount4,
+.nmc .nine9-cart-item .item-amount5,
+.nmc .nine9-cart-item .item-amount6,
+.nmc .nine9-cart-item .item-amount7,
+.nmc .nine9-cart-item .item-amount8,
+.nmc .nine9-cart-item .item-amount9,
+.nmc .nine9-cart-item .item-amount10,
+.nmc .nine9-cart-item .item-amount11,
+.nmc .nine9-cart-item .item-amount12,
+.nmc .ten10-cart-item .item-amount1,
+.nmc .ten10-cart-item .item-amount2,
+.nmc .ten10-cart-item .item-amount3,
+.nmc .ten10-cart-item .item-amount4,
+.nmc .ten10-cart-item .item-amount5,
+.nmc .ten10-cart-item .item-amount6,
+.nmc .ten10-cart-item .item-amount7,
+.nmc .ten10-cart-item .item-amount8,
+.nmc .ten10-cart-item .item-amount9,
+.nmc .ten10-cart-item .item-amount10,
+.nmc .ten10-cart-item .item-amount11,
+.nmc .ten10-cart-item .item-amount12,
+.nmc .eleven11-cart-item .item-amount1,
+.nmc .eleven11-cart-item .item-amount2,
+.nmc .eleven11-cart-item .item-amount3,
+.nmc .eleven11-cart-item .item-amount4,
+.nmc .eleven11-cart-item .item-amount5,
+.nmc .eleven11-cart-item .item-amount6,
+.nmc .eleven11-cart-item .item-amount7,
+.nmc .eleven11-cart-item .item-amount8,
+.nmc .eleven11-cart-item .item-amount9,
+.nmc .eleven11-cart-item .item-amount10,
+.nmc .eleven11-cart-item .item-amount11,
+.nmc .eleven11-cart-item .item-amount12,
+.nmc .twelve12-cart-item .item-amount1,
+.nmc .twelve12-cart-item .item-amount2,
+.nmc .twelve12-cart-item .item-amount3,
+.nmc .twelve12-cart-item .item-amount4,
+.nmc .twelve12-cart-item .item-amount5,
+.nmc .twelve12-cart-item .item-amount6,
+.nmc .twelve12-cart-item .item-amount7,
+.nmc .twelve12-cart-item .item-amount8,
+.nmc .twelve12-cart-item .item-amount9,
+.nmc .twelve12-cart-item .item-amount10,
+.nmc .twelve12-cart-item .item-amount11,
+.nmc .twelve12-cart-item .item-amount12 {
+    text-align: center;
+}
+.nmc .one1-cart-item .remove-item-1,
+.nmc .one1-cart-item .remove-item-2,
+.nmc .one1-cart-item .remove-item-3,
+.nmc .one1-cart-item .remove-item-4,
+.nmc .one1-cart-item .remove-item-5,
+.nmc .one1-cart-item .remove-item-6,
+.nmc .one1-cart-item .remove-item-7,
+.nmc .one1-cart-item .remove-item-8,
+.nmc .one1-cart-item .remove-item-9,
+.nmc .one1-cart-item .remove-item-10,
+.nmc .one1-cart-item .remove-item-11,
+.nmc .one1-cart-item .remove-item-12,
+.nmc .two2-cart-item .remove-item-1,
+.nmc .two2-cart-item .remove-item-2,
+.nmc .two2-cart-item .remove-item-3,
+.nmc .two2-cart-item .remove-item-4,
+.nmc .two2-cart-item .remove-item-5,
+.nmc .two2-cart-item .remove-item-6,
+.nmc .two2-cart-item .remove-item-7,
+.nmc .two2-cart-item .remove-item-8,
+.nmc .two2-cart-item .remove-item-9,
+.nmc .two2-cart-item .remove-item-10,
+.nmc .two2-cart-item .remove-item-11,
+.nmc .two2-cart-item .remove-item-12,
+.nmc .three3-cart-item .remove-item-1,
+.nmc .three3-cart-item .remove-item-2,
+.nmc .three3-cart-item .remove-item-3,
+.nmc .three3-cart-item .remove-item-4,
+.nmc .three3-cart-item .remove-item-5,
+.nmc .three3-cart-item .remove-item-6,
+.nmc .three3-cart-item .remove-item-7,
+.nmc .three3-cart-item .remove-item-8,
+.nmc .three3-cart-item .remove-item-9,
+.nmc .three3-cart-item .remove-item-10,
+.nmc .three3-cart-item .remove-item-11,
+.nmc .three3-cart-item .remove-item-12,
+.nmc .four4-cart-item .remove-item-1,
+.nmc .four4-cart-item .remove-item-2,
+.nmc .four4-cart-item .remove-item-3,
+.nmc .four4-cart-item .remove-item-4,
+.nmc .four4-cart-item .remove-item-5,
+.nmc .four4-cart-item .remove-item-6,
+.nmc .four4-cart-item .remove-item-7,
+.nmc .four4-cart-item .remove-item-8,
+.nmc .four4-cart-item .remove-item-9,
+.nmc .four4-cart-item .remove-item-10,
+.nmc .four4-cart-item .remove-item-11,
+.nmc .four4-cart-item .remove-item-12,
+.nmc .five5-cart-item .remove-item-1,
+.nmc .five5-cart-item .remove-item-2,
+.nmc .five5-cart-item .remove-item-3,
+.nmc .five5-cart-item .remove-item-4,
+.nmc .five5-cart-item .remove-item-5,
+.nmc .five5-cart-item .remove-item-6,
+.nmc .five5-cart-item .remove-item-7,
+.nmc .five5-cart-item .remove-item-8,
+.nmc .five5-cart-item .remove-item-9,
+.nmc .five5-cart-item .remove-item-10,
+.nmc .five5-cart-item .remove-item-11,
+.nmc .five5-cart-item .remove-item-12,
+.nmc .six6-cart-item .remove-item-1,
+.nmc .six6-cart-item .remove-item-2,
+.nmc .six6-cart-item .remove-item-3,
+.nmc .six6-cart-item .remove-item-4,
+.nmc .six6-cart-item .remove-item-5,
+.nmc .six6-cart-item .remove-item-6,
+.nmc .six6-cart-item .remove-item-7,
+.nmc .six6-cart-item .remove-item-8,
+.nmc .six6-cart-item .remove-item-9,
+.nmc .six6-cart-item .remove-item-10,
+.nmc .six6-cart-item .remove-item-11,
+.nmc .six6-cart-item .remove-item-12,
+.nmc .seven7-cart-item .remove-item-1,
+.nmc .seven7-cart-item .remove-item-2,
+.nmc .seven7-cart-item .remove-item-3,
+.nmc .seven7-cart-item .remove-item-4,
+.nmc .seven7-cart-item .remove-item-5,
+.nmc .seven7-cart-item .remove-item-6,
+.nmc .seven7-cart-item .remove-item-7,
+.nmc .seven7-cart-item .remove-item-8,
+.nmc .seven7-cart-item .remove-item-9,
+.nmc .seven7-cart-item .remove-item-10,
+.nmc .seven7-cart-item .remove-item-11,
+.nmc .seven7-cart-item .remove-item-12,
+.nmc .eight8-cart-item .remove-item-1,
+.nmc .eight8-cart-item .remove-item-2,
+.nmc .eight8-cart-item .remove-item-3,
+.nmc .eight8-cart-item .remove-item-4,
+.nmc .eight8-cart-item .remove-item-5,
+.nmc .eight8-cart-item .remove-item-6,
+.nmc .eight8-cart-item .remove-item-7,
+.nmc .eight8-cart-item .remove-item-8,
+.nmc .eight8-cart-item .remove-item-9,
+.nmc .eight8-cart-item .remove-item-10,
+.nmc .eight8-cart-item .remove-item-11,
+.nmc .eight8-cart-item .remove-item-12,
+.nmc .nine9-cart-item .remove-item-1,
+.nmc .nine9-cart-item .remove-item-2,
+.nmc .nine9-cart-item .remove-item-3,
+.nmc .nine9-cart-item .remove-item-4,
+.nmc .nine9-cart-item .remove-item-5,
+.nmc .nine9-cart-item .remove-item-6,
+.nmc .nine9-cart-item .remove-item-7,
+.nmc .nine9-cart-item .remove-item-8,
+.nmc .nine9-cart-item .remove-item-9,
+.nmc .nine9-cart-item .remove-item-10,
+.nmc .nine9-cart-item .remove-item-11,
+.nmc .nine9-cart-item .remove-item-12,
+.nmc .ten10-cart-item .remove-item-1,
+.nmc .ten10-cart-item .remove-item-2,
+.nmc .ten10-cart-item .remove-item-3,
+.nmc .ten10-cart-item .remove-item-4,
+.nmc .ten10-cart-item .remove-item-5,
+.nmc .ten10-cart-item .remove-item-6,
+.nmc .ten10-cart-item .remove-item-7,
+.nmc .ten10-cart-item .remove-item-8,
+.nmc .ten10-cart-item .remove-item-9,
+.nmc .ten10-cart-item .remove-item-10,
+.nmc .ten10-cart-item .remove-item-11,
+.nmc .ten10-cart-item .remove-item-12,
+.nmc .eleven11-cart-item .remove-item-1,
+.nmc .eleven11-cart-item .remove-item-2,
+.nmc .eleven11-cart-item .remove-item-3,
+.nmc .eleven11-cart-item .remove-item-4,
+.nmc .eleven11-cart-item .remove-item-5,
+.nmc .eleven11-cart-item .remove-item-6,
+.nmc .eleven11-cart-item .remove-item-7,
+.nmc .eleven11-cart-item .remove-item-8,
+.nmc .eleven11-cart-item .remove-item-9,
+.nmc .eleven11-cart-item .remove-item-10,
+.nmc .eleven11-cart-item .remove-item-11,
+.nmc .eleven11-cart-item .remove-item-12,
+.nmc .twelve12-cart-item .remove-item-1,
+.nmc .twelve12-cart-item .remove-item-2,
+.nmc .twelve12-cart-item .remove-item-3,
+.nmc .twelve12-cart-item .remove-item-4,
+.nmc .twelve12-cart-item .remove-item-5,
+.nmc .twelve12-cart-item .remove-item-6,
+.nmc .twelve12-cart-item .remove-item-7,
+.nmc .twelve12-cart-item .remove-item-8,
+.nmc .twelve12-cart-item .remove-item-9,
+.nmc .twelve12-cart-item .remove-item-10,
+.nmc .twelve12-cart-item .remove-item-11,
+.nmc .twelve12-cart-item .remove-item-12 {
+    color: grey;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.nmc .one1-cart-item .remove-item-1:hover,
+.nmc .one1-cart-item .remove-item-2:hover,
+.nmc .one1-cart-item .remove-item-3:hover,
+.nmc .one1-cart-item .remove-item-4:hover,
+.nmc .one1-cart-item .remove-item-5:hover,
+.nmc .one1-cart-item .remove-item-6:hover,
+.nmc .one1-cart-item .remove-item-7:hover,
+.nmc .one1-cart-item .remove-item-8:hover,
+.nmc .one1-cart-item .remove-item-9:hover,
+.nmc .one1-cart-item .remove-item-10:hover,
+.nmc .one1-cart-item .remove-item-11:hover,
+.nmc .one1-cart-item .remove-item-12:hover,
+.nmc .two2-cart-item .remove-item-1:hover,
+.nmc .two2-cart-item .remove-item-2:hover,
+.nmc .two2-cart-item .remove-item-3:hover,
+.nmc .two2-cart-item .remove-item-4:hover,
+.nmc .two2-cart-item .remove-item-5:hover,
+.nmc .two2-cart-item .remove-item-6:hover,
+.nmc .two2-cart-item .remove-item-7:hover,
+.nmc .two2-cart-item .remove-item-8:hover,
+.nmc .two2-cart-item .remove-item-9:hover,
+.nmc .two2-cart-item .remove-item-10:hover,
+.nmc .two2-cart-item .remove-item-11:hover,
+.nmc .two2-cart-item .remove-item-12:hover,
+.nmc .three3-cart-item .remove-item-1:hover,
+.nmc .three3-cart-item .remove-item-2:hover,
+.nmc .three3-cart-item .remove-item-3:hover,
+.nmc .three3-cart-item .remove-item-4:hover,
+.nmc .three3-cart-item .remove-item-5:hover,
+.nmc .three3-cart-item .remove-item-6:hover,
+.nmc .three3-cart-item .remove-item-7:hover,
+.nmc .three3-cart-item .remove-item-8:hover,
+.nmc .three3-cart-item .remove-item-9:hover,
+.nmc .three3-cart-item .remove-item-10:hover,
+.nmc .three3-cart-item .remove-item-11:hover,
+.nmc .three3-cart-item .remove-item-12:hover,
+.nmc .four4-cart-item .remove-item-1:hover,
+.nmc .four4-cart-item .remove-item-2:hover,
+.nmc .four4-cart-item .remove-item-3:hover,
+.nmc .four4-cart-item .remove-item-4:hover,
+.nmc .four4-cart-item .remove-item-5:hover,
+.nmc .four4-cart-item .remove-item-6:hover,
+.nmc .four4-cart-item .remove-item-7:hover,
+.nmc .four4-cart-item .remove-item-8:hover,
+.nmc .four4-cart-item .remove-item-9:hover,
+.nmc .four4-cart-item .remove-item-10:hover,
+.nmc .four4-cart-item .remove-item-11:hover,
+.nmc .four4-cart-item .remove-item-12:hover,
+.nmc .five5-cart-item .remove-item-1:hover,
+.nmc .five5-cart-item .remove-item-2:hover,
+.nmc .five5-cart-item .remove-item-3:hover,
+.nmc .five5-cart-item .remove-item-4:hover,
+.nmc .five5-cart-item .remove-item-5:hover,
+.nmc .five5-cart-item .remove-item-6:hover,
+.nmc .five5-cart-item .remove-item-7:hover,
+.nmc .five5-cart-item .remove-item-8:hover,
+.nmc .five5-cart-item .remove-item-9:hover,
+.nmc .five5-cart-item .remove-item-10:hover,
+.nmc .five5-cart-item .remove-item-11:hover,
+.nmc .five5-cart-item .remove-item-12:hover,
+.nmc .six6-cart-item .remove-item-1:hover,
+.nmc .six6-cart-item .remove-item-2:hover,
+.nmc .six6-cart-item .remove-item-3:hover,
+.nmc .six6-cart-item .remove-item-4:hover,
+.nmc .six6-cart-item .remove-item-5:hover,
+.nmc .six6-cart-item .remove-item-6:hover,
+.nmc .six6-cart-item .remove-item-7:hover,
+.nmc .six6-cart-item .remove-item-8:hover,
+.nmc .six6-cart-item .remove-item-9:hover,
+.nmc .six6-cart-item .remove-item-10:hover,
+.nmc .six6-cart-item .remove-item-11:hover,
+.nmc .six6-cart-item .remove-item-12:hover,
+.nmc .seven7-cart-item .remove-item-1:hover,
+.nmc .seven7-cart-item .remove-item-2:hover,
+.nmc .seven7-cart-item .remove-item-3:hover,
+.nmc .seven7-cart-item .remove-item-4:hover,
+.nmc .seven7-cart-item .remove-item-5:hover,
+.nmc .seven7-cart-item .remove-item-6:hover,
+.nmc .seven7-cart-item .remove-item-7:hover,
+.nmc .seven7-cart-item .remove-item-8:hover,
+.nmc .seven7-cart-item .remove-item-9:hover,
+.nmc .seven7-cart-item .remove-item-10:hover,
+.nmc .seven7-cart-item .remove-item-11:hover,
+.nmc .seven7-cart-item .remove-item-12:hover,
+.nmc .eight8-cart-item .remove-item-1:hover,
+.nmc .eight8-cart-item .remove-item-2:hover,
+.nmc .eight8-cart-item .remove-item-3:hover,
+.nmc .eight8-cart-item .remove-item-4:hover,
+.nmc .eight8-cart-item .remove-item-5:hover,
+.nmc .eight8-cart-item .remove-item-6:hover,
+.nmc .eight8-cart-item .remove-item-7:hover,
+.nmc .eight8-cart-item .remove-item-8:hover,
+.nmc .eight8-cart-item .remove-item-9:hover,
+.nmc .eight8-cart-item .remove-item-10:hover,
+.nmc .eight8-cart-item .remove-item-11:hover,
+.nmc .eight8-cart-item .remove-item-12:hover,
+.nmc .nine9-cart-item .remove-item-1:hover,
+.nmc .nine9-cart-item .remove-item-2:hover,
+.nmc .nine9-cart-item .remove-item-3:hover,
+.nmc .nine9-cart-item .remove-item-4:hover,
+.nmc .nine9-cart-item .remove-item-5:hover,
+.nmc .nine9-cart-item .remove-item-6:hover,
+.nmc .nine9-cart-item .remove-item-7:hover,
+.nmc .nine9-cart-item .remove-item-8:hover,
+.nmc .nine9-cart-item .remove-item-9:hover,
+.nmc .nine9-cart-item .remove-item-10:hover,
+.nmc .nine9-cart-item .remove-item-11:hover,
+.nmc .nine9-cart-item .remove-item-12:hover,
+.nmc .ten10-cart-item .remove-item-1:hover,
+.nmc .ten10-cart-item .remove-item-2:hover,
+.nmc .ten10-cart-item .remove-item-3:hover,
+.nmc .ten10-cart-item .remove-item-4:hover,
+.nmc .ten10-cart-item .remove-item-5:hover,
+.nmc .ten10-cart-item .remove-item-6:hover,
+.nmc .ten10-cart-item .remove-item-7:hover,
+.nmc .ten10-cart-item .remove-item-8:hover,
+.nmc .ten10-cart-item .remove-item-9:hover,
+.nmc .ten10-cart-item .remove-item-10:hover,
+.nmc .ten10-cart-item .remove-item-11:hover,
+.nmc .ten10-cart-item .remove-item-12:hover,
+.nmc .eleven11-cart-item .remove-item-1:hover,
+.nmc .eleven11-cart-item .remove-item-2:hover,
+.nmc .eleven11-cart-item .remove-item-3:hover,
+.nmc .eleven11-cart-item .remove-item-4:hover,
+.nmc .eleven11-cart-item .remove-item-5:hover,
+.nmc .eleven11-cart-item .remove-item-6:hover,
+.nmc .eleven11-cart-item .remove-item-7:hover,
+.nmc .eleven11-cart-item .remove-item-8:hover,
+.nmc .eleven11-cart-item .remove-item-9:hover,
+.nmc .eleven11-cart-item .remove-item-10:hover,
+.nmc .eleven11-cart-item .remove-item-11:hover,
+.nmc .eleven11-cart-item .remove-item-12:hover,
+.nmc .twelve12-cart-item .remove-item-1:hover,
+.nmc .twelve12-cart-item .remove-item-2:hover,
+.nmc .twelve12-cart-item .remove-item-3:hover,
+.nmc .twelve12-cart-item .remove-item-4:hover,
+.nmc .twelve12-cart-item .remove-item-5:hover,
+.nmc .twelve12-cart-item .remove-item-6:hover,
+.nmc .twelve12-cart-item .remove-item-7:hover,
+.nmc .twelve12-cart-item .remove-item-8:hover,
+.nmc .twelve12-cart-item .remove-item-9:hover,
+.nmc .twelve12-cart-item .remove-item-10:hover,
+.nmc .twelve12-cart-item .remove-item-11:hover,
+.nmc .twelve12-cart-item .remove-item-12:hover {
+    color: #e0e0e0;
+}
+.nmc .one1-cart-item .fa-chevron-up,
+.nmc .one1-cart-item .fa-chevron-down,
+.nmc .two2-cart-item .fa-chevron-up,
+.nmc .two2-cart-item .fa-chevron-down,
+.nmc .three3-cart-item .fa-chevron-up,
+.nmc .three3-cart-item .fa-chevron-down,
+.nmc .four4-cart-item .fa-chevron-up,
+.nmc .four4-cart-item .fa-chevron-down,
+.nmc .five5-cart-item .fa-chevron-up,
+.nmc .five5-cart-item .fa-chevron-down,
+.nmc .six6-cart-item .fa-chevron-up,
+.nmc .six6-cart-item .fa-chevron-down,
+.nmc .seven7-cart-item .fa-chevron-up,
+.nmc .seven7-cart-item .fa-chevron-down,
+.nmc .eight8-cart-item .fa-chevron-up,
+.nmc .eight8-cart-item .fa-chevron-down,
+.nmc .nine9-cart-item .fa-chevron-up,
+.nmc .nine9-cart-item .fa-chevron-down,
+.nmc .ten10-cart-item .fa-chevron-up,
+.nmc .ten10-cart-item .fa-chevron-down,
+.nmc .eleven11-cart-item .fa-chevron-up,
+.nmc .eleven11-cart-item .fa-chevron-down,
+.nmc .twelve12-cart-item .fa-chevron-up,
+.nmc .twelve12-cart-item .fa-chevron-down {
+    color: #b66f2d;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.nmc .one1-cart-item .fa-chevron-up:hover,
+.nmc .one1-cart-item .fa-chevron-down:hover,
+.nmc .two2-cart-item .fa-chevron-up:hover,
+.nmc .two2-cart-item .fa-chevron-down:hover,
+.nmc .three3-cart-item .fa-chevron-up:hover,
+.nmc .three3-cart-item .fa-chevron-down:hover,
+.nmc .four4-cart-item .fa-chevron-up:hover,
+.nmc .four4-cart-item .fa-chevron-down:hover,
+.nmc .five5-cart-item .fa-chevron-up:hover,
+.nmc .five5-cart-item .fa-chevron-down:hover,
+.nmc .six6-cart-item .fa-chevron-up:hover,
+.nmc .six6-cart-item .fa-chevron-down:hover,
+.nmc .seven7-cart-item .fa-chevron-up:hover,
+.nmc .seven7-cart-item .fa-chevron-down:hover,
+.nmc .eight8-cart-item .fa-chevron-up:hover,
+.nmc .eight8-cart-item .fa-chevron-down:hover,
+.nmc .nine9-cart-item .fa-chevron-up:hover,
+.nmc .nine9-cart-item .fa-chevron-down:hover,
+.nmc .ten10-cart-item .fa-chevron-up:hover,
+.nmc .ten10-cart-item .fa-chevron-down:hover,
+.nmc .eleven11-cart-item .fa-chevron-up:hover,
+.nmc .eleven11-cart-item .fa-chevron-down:hover,
+.nmc .twelve12-cart-item .fa-chevron-up:hover,
+.nmc .twelve12-cart-item .fa-chevron-down:hover {
+    color: #db8637;
+}
+.nmc .one__view__openBtn,
+.nmc .one__view__closeBtn,
+.nmc .two__view__openBtn,
+.nmc .two__view__closeBtn,
+.nmc .three__view__openBtn,
+.nmc .three__view__closeBtn,
+.nmc .four__view__openBtn,
+.nmc .four__view__closeBtn,
+.nmc .five__view__openBtn,
+.nmc .five__view__closeBtn,
+.nmc .six__view__openBtn,
+.nmc .six__view__closeBtn,
+.nmc .seven__view__openBtn,
+.nmc .seven__view__closeBtn,
+.nmc .eight__view__openBtn,
+.nmc .eight__view__closeBtn,
+.nmc .nine__view__openBtn,
+.nmc .nine__view__closeBtn,
+.nmc .ten__view__openBtn,
+.nmc .ten__view__closeBtn,
+.nmc .eleven__view__openBtn,
+.nmc .eleven__view__closeBtn,
+.nmc .twelve__view__openBtn,
+.nmc .twelve__view__closeBtn {
+    cursor: pointer;
+}
+.nmc .one__view__closeBtn,
+.nmc .two__view__closeBtn,
+.nmc .three__view__closeBtn,
+.nmc .four__view__closeBtn,
+.nmc .five__view__closeBtn,
+.nmc .six__view__closeBtn,
+.nmc .seven__view__closeBtn,
+.nmc .eight__view__closeBtn,
+.nmc .nine__view__closeBtn,
+.nmc .ten__view__closeBtn,
+.nmc .eleven__view__closeBtn,
+.nmc .twelve__view__closeBtn {
+    position: fixed;
+    right: 5%;
+    font-size: 1.5rem;
+    transition: all 0.5s ease-in-out;
+}
+.nmc .one__view__closeBtn:hover,
+.nmc .two__view__closeBtn:hover,
+.nmc .three__view__closeBtn:hover,
+.nmc .four__view__closeBtn:hover,
+.nmc .five__view__closeBtn:hover,
+.nmc .six__view__closeBtn:hover,
+.nmc .seven__view__closeBtn:hover,
+.nmc .eight__view__closeBtn:hover,
+.nmc .nine__view__closeBtn:hover,
+.nmc .ten__view__closeBtn:hover,
+.nmc .eleven__view__closeBtn:hover,
+.nmc .twelve__view__closeBtn:hover {
+    color: #b66f2d;
+}
+.nmc .one__view-overlay,
+.nmc .two__view-overlay,
+.nmc .three__view-overlay,
+.nmc .four__view-overlay,
+.nmc .five__view-overlay,
+.nmc .six__view-overlay,
+.nmc .seven__view-overlay,
+.nmc .eight__view-overlay,
+.nmc .nine__view-overlay,
+.nmc .ten__view-overlay,
+.nmc .eleven__view-overlay,
+.nmc .twelve__view-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    background: rgba(112, 112, 112, 0.5);
+    z-index: 4;
+    visibility: hidden;
+}
+.nmc .one__view,
+.nmc .two__view,
+.nmc .three__view,
+.nmc .four__view,
+.nmc .five__view,
+.nmc .six__view,
+.nmc .seven__view,
+.nmc .eight__view,
+.nmc .nine__view,
+.nmc .ten__view,
+.nmc .eleven__view,
+.nmc .twelve__view {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: auto;
+    z-index: 5;
+    background: #151515;
+    padding: 1.5rem;
+    transition: all 0.5s ease-in-out;
+    border: 2px groove #707070;
+    transform: translateX(-100%);
+    text-align: center;
+     
+    color: #e0e0e0;
+}
+.nmc .one__transparentBcg,
+.nmc .two__transparentBcg,
+.nmc .three__transparentBcg,
+.nmc .four__transparentBcg,
+.nmc .five__transparentBcg,
+.nmc .six__transparentBcg,
+.nmc .seven__transparentBcg,
+.nmc .eight__transparentBcg,
+.nmc .nine__transparentBcg,
+.nmc .ten__transparentBcg,
+.nmc .eleven__transparentBcg,
+.nmc .twelve__transparentBcg {
+    visibility: visible;
+}
+.nmc .one__showview,
+.nmc .two__showview,
+.nmc .three__showview,
+.nmc .four__showview,
+.nmc .five__showview,
+.nmc .six__showview,
+.nmc .seven__showview,
+.nmc .eight__showview,
+.nmc .nine__showview,
+.nmc .ten__showview,
+.nmc .eleven__showview,
+.nmc .twelve__showview {
+    transform: translateX(0);
+}
+.nmc img {
+    width: 300px;
+    height: 300px;
+    margin: 1.5rem 0;
+    border-radius: 20rem;
+    border: 5px solid #b66f2d;
+}
+.nmc .nutritional_info {
+    text-align: left;
+}
+.nmc .nutritional_info h2 {
+    text-align: center;
+}
+.nmc .nutritional_info .bar {
+    margin: 0.25rem 0;
+    padding: 0.25rem 0;
+}
+.nmc .nutritional_info .bar-large {
+    border-bottom: 5px solid #e0e0e0;
+}
+.nmc .nutritional_info .bar-medium {
+    border-bottom: 2px solid #e0e0e0;
+}
+.nmc .nutritional_info .bar-small {
+    border-bottom: 1px solid #e0e0e0;
+}
+.nmc .nutritional_info .span-right {
+    float: right;
+}
+.nmc .nutritional_info .span-align-right {
+    text-align: right;
+}
+.nmc .nutritional_info .indent {
+    text-indent: 2rem;
+}
+.nmc .ingredients,
+.nmc .allergens {
+    margin: 1.5rem 0;
+}
+.nmc .ingredients h2,
+.nmc .allergens h2 {
+    color: #b66f2d;
+}
+.logo-first {
+    color: #707070;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;
+}
+.logo-last {
+    color: #b66f2d;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;
+}
+footer {
+     
+}
+footer .icons {
+    font-size: 2.5rem;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+footer .icons a {
+    color: #151515;
+    outline: none;
+    text-decoration: none;
+    margin: 0.5rem;
+    transition: all 0.5s ease-in-out;
+}
+footer .icons a:hover {
+    color: #db8637;
+}
+footer .copyright {
+    padding: 0;
+    margin-top: 2rem;
+    float: right;
+}
+
+
+
+
+/* range sider style */
+input[type="range"] {
+    /* removing default appearance */
+    -webkit-appearance: none;
+    appearance: none; 
+    /* creating a custom design */
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    border-radius: 15px;
+    /*  overflow: hidden;  remove this line*/
+    
+    /* New additions */
+    height: 6px;
+    background: #ccc;
+  }
+  
+  /* Thumb: webkit */
+  input[type="range"]::-webkit-slider-thumb {
+    /* removing default appearance */
+    -webkit-appearance: none;
+    appearance: none; 
+    /* creating a custom design */
+    height: 15px;
+    width: 15px;
+    background-color: #000;
+    border-radius: 50%;
+    border: none;
+  
+    /* box-shadow: -407px 0 0 400px #000; emove this line */
+    transition: .2s ease-in-out;
+  }
+  
+  /* Thumb: Firefox */
+  input[type="range"]::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    background-color: #000;
+    border-radius: 50%;
+    border: none;
+    
+    /* box-shadow: -407px 0 0 400px #f50; emove this line */
+    transition: .2s ease-in-out;
+  }
+  
+  /* Hover, active & focus Thumb: Webkit */
+  
+  input[type="range"]::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 0 10px rgba(255,85,0, .1)
+  }
+  input[type="range"]:active::-webkit-slider-thumb {
+    box-shadow: 0 0 0 13px rgba(255,85,0, .2)
+  }
+  input[type="range"]:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 13px rgba(255,85,0, .2)
+  }
+  
+  /* Hover, active & focus Thumb: Firfox */
+  
+  input[type="range"]::-moz-range-thumb:hover {
+    box-shadow: 0 0 0 10px rgba(255,85,0, .1)
+  }
+  input[type="range"]:active::-moz-range-thumb {
+    box-shadow: 0 0 0 13px rgba(255,85,0, .2)
+  }
+  input[type="range"]:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 13px rgba(255,85,0, .2)    
+  }
+  
+  /*=============
+  Aesthetics 
+  =========================*/
+  
+  body {
+   }
+  
+  h1 {
+    color: #4b4949; 
+    text-align: center;
+  }
+  
+  .wrapper {
+    color: #4b4949; 
+    background: #C2A080;
+    max-width: 400px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .range {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    height: 4rem;
+    width: 80%;
+    background: #fff;
+    padding: 0px 10px;
+  }
+  
+  .value {
+    font-size: 26px;    
+    width: 50px;
+    text-align: center;
+  }
+  
+  
+  
